@@ -113,3 +113,12 @@ of requirements.
   including which laptop type it was built for.  It pauses at this point
   for you to confirm that you wish to proceed.  It will then automatically
   flash the patched firmware.
+
+* I can't flash the bios with the usb key on my T430. There's another workaround:
+  Download BIOS upgrade EXE from Lenovo website
+  Run it to unzip it to C:\DRIVERS\FLASH
+  Replace the files in C:\DRIVERS\FLASH\g1uj40us\G1HT35WW\ with those in your USB KEY
+  run CMD with Administrator
+  run in 64 system: WINFLASH64 /SD /FILE C:\DRIVERS\FLASH\g1uj40us\G1HT35WW\$01D2000.FL1
+   or in 32 system: WINFLASH32 /SD /FILE C:\DRIVERS\FLASH\g1uj40us\G1HT35WW\$01D2000.FL1
+  It'll reboot and flash the BIOS
